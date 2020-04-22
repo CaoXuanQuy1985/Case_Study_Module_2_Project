@@ -1,0 +1,112 @@
+#form_login, #form_register {
+    text-align: center;
+    background-color: #8BBAB4;
+    height: 500px;
+    color: moccasin;
+    font-family: Verdana;
+}
+
+#form_login table, #form_register table {
+    border-collapse: collapse;
+    margin-left: 60px;
+    width: 440px;
+    height: 220px;
+}
+
+#form_login table tr td, #form_register table tr td {
+    height: 50px;
+    postion: relative;
+    text-align: center;
+    border: none;
+    background-color: #caf3f5;
+    color: #8d7f6f;
+    text-shadow: 1px 1px white;
+}
+
+#form_login table tr td input, #form_register table tr td input {
+    margin-bottom: 15px;
+    margin-left: -130px;
+    width: 200px;
+    height: 25px;
+}
+
+h2 {
+    padding-top: 50px;
+    text-shadow: 1px 1px black;
+}
+
+.loginBtn {
+    width: 100px;
+    height: 25px;
+    color: #8d7f6f;
+    font-weight: bold;
+}
+
+#usernameId, #usernameInput {
+    position: relative;
+    top: 20px;
+}
+
+.feedback {
+    width: 280px;
+    height: 30px;
+    margin-left: -36px;
+    color: red;
+    font-size: 12px;
+    text-align: left;
+}
+
+.tip {
+    width: 280px;
+    height: 30px;
+    margin-left: -36px;
+    color: green;
+    font-size: 13px;
+    text-align: left;
+}
+
+#usrInput, #pwd, #pwd2 {
+    position: relative;
+    top: 15px;
+}
+
+#pwd, #pwd2 {
+    position: relative;
+    top: -8px;
+}
+
+#feedbackPassword, #feedbackPassword2 {
+    position: relative;
+    top: -19px;
+}
+
+#textPwd {
+    position: relative;
+    top: -22px;
+    left: -9px;
+}
+
+#feedbackUsername {
+    position: relative;
+    top: 3px;
+}
+
+#registerBtn {
+    position: relative;
+    top: 1px;
+}
+
+#registerBtn a {
+    text-decoration: none;
+    color: #8d7f6f;
+}
+
+#submitBtn {
+    margin-left: -120px;
+}
+
+#registerBtn {
+    position: relative;
+    left: 50px;
+    top: -40px;
+}

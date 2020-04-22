@@ -1,0 +1,47 @@
+#form-add-new {
+    width: 350px;
+    height: 270px;
+    background-color: yellow;
+    margin: 50px auto;
+    padding-top: 30px;
+    padding-left: 100px;
+}
+
+#form-add-new div {
+    padding-top: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+#form-add-new input {
+    margin-left: 10px;
+}
+
+#btnSubmit {
+    margin-top: 25px;
+    position: relative;
+    top: 1px;
+    margin-left: 85px;
+    color: black;
+}
+
+#email, #phone, #link, #pwd {
+    position: relative;
+}
+
+#email {
+    left: 26px;
+}
+
+#phone {
+    left: 25px;
+}
+
+#link {
+    top: 1px;
+}
+
+#pwd {
+    left: 3px;
+    top: 1px;
+}

@@ -1,0 +1,300 @@
+body {
+    color: #666666;
+    background-color: bisque;
+    background-position: center;
+    font-family: Georgia times Serif;
+    line-height: 1.4em;
+    margin: 0px;
+}
+
+#page {
+    width: 1000px;
+    margin: 10px auto;
+    background-color: #ffffff;
+}
+
+header {
+    height: 170px;
+}
+
+#banner {
+    height: 170px;
+    background-image: url("../image/Biochemistry.png");
+}
+
+#menu_bar {
+    background-color: #0fa0dd;
+    height: 43px;
+    position: relative;
+    bottom: 13px;
+}
+
+nav ul {
+    text-align: center;
+    padding-right: 80px;
+}
+
+nav ul li {
+    display: inline;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Verdana;
+    position: relative;
+    top: 9px;
+    border-right: 1px solid white;
+    padding: 2px 20px 4px 20px;
+    color: moccasin;
+    text-shadow: 1px 1px black;
+}
+
+nav ul li a {
+    color: moccasin;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+}
+
+nav ul li:last-child {
+    border: none;
+}
+
+#container {
+    height: 1000px;
+    background-color: white;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: green;
+}
+
+.sidebar ul li {
+    list-style-type: none;
+    border-bottom: 1px dotted green;
+    width: 190px;
+    height: 33px;
+    position: relative;
+    right: 30px;
+    bottom: 10px;
+}
+
+.even {
+    background-color: #cee9f8;
+}
+
+.sidebar ul li a {
+    color: #8d7f6f;
+    font-size: 18px;
+    font-size: 18px;
+    text-decoration: none;
+    padding-left: 13px;
+    position: relative;
+    top: 5px;
+}
+
+#left_sidebar {
+    height: 400px;
+    position: relative;
+    top: 60px;
+    background-color: white;
+    float: left;
+}
+
+.header_bar {
+    height: 30px;
+    background-color: #d6d3c8;
+    border-radius: 6px;
+    text-align: center;
+    padding-top: 8px;
+    font-family: Verdana;
+    font-weight: bold;
+    text-shadow: 1px 1px white;
+    color: #0c9fcf;
+    margin-left: 5px;
+}
+
+#main_content {
+    width: 574px;
+    height: 600px;
+    float: left;
+    margin-top: 60px;
+    margin-left: 10px;
+}
+
+#promotion {
+    width: 580px;
+    height: 156px;
+    background-image: url("../image/slider_bg.gif");
+    border-radius: 12px;
+}
+
+#logo {
+    background-image: url("../image/codegym_logo.png");
+    width: 100px;
+    height: 80px;
+    padding-top: 20px;
+    margin:30px 20px 0px 25px;
+    float: left;
+}
+
+#description {
+    width: 390px;
+    height: 150px;
+    float: left;
+    text-align: left;
+    font-size: 15px;
+    margin-left: 10px;
+    color: #0c9fcf;
+}
+
+button {
+    position: relative;
+    bottom: 9px;
+    color: green;
+    text-shadow: 1px 1px white;
+    margin-left: 20px;
+}
+
+#article_1 {
+    width: 580px;
+    height: 410px;
+    float: left;
+}
+
+.header_bar_main {
+    height: 30px;
+    background-color: #d6d3c8;
+    border-radius: 6px;
+    text-align: left;
+    padding-top: 8px;
+    font-family: Verdana;
+    font-weight: bold;
+    text-shadow: 1px 1px white;
+    color: #0c9fcf;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+table {
+    margin: 10px 10px 0 10px;
+    border-spacing: 10px;
+}
+
+table tr td {
+    border: 1px solid #d6d3c8;
+    width: 170px;
+    height: 200px;
+    color: red;
+    font-weight: bold;
+}
+
+table tr td img {
+    margin-left: 8px;
+}
+
+table tr td input {
+    margin-left: 12px;
+    margin-top: 13px;
+    color: #0c9fcf;
+    font-weight: bold;
+}
+
+span {
+    margin-left: 15px;
+    position: relative;
+    top: 7px;
+}
+
+#right_sidebar {
+    float:left;
+    margin-top: 60px;
+    margin-left: 10px;
+    background-color: white;
+}
+
+#right_sidebar tr td {
+    width: 200px;
+    height: 51px;
+}
+
+#right_sidebar tr td img {
+    position: relative;
+    right: 8px;
+}
+
+#right_sidebar table {
+    border-collapse: collapse;
+    width: 180px;
+}
+
+#infor_course {
+    width: 50px;
+}
+
+#shop_cart tr td {
+    padding-left: 10px;
+    font-size: 15px;
+    color: #0c9fcf;
+}
+
+#shop_cart tr td b {
+    font-size: 15px;
+    color: red;
+}
+
+#search_header {
+    margin-top: 10px;
+}
+
+#search-form {
+    margin-top: 20px;
+    margin-left: 8px;
+}
+
+#albert {
+    width: 180px;
+    height: 500px;
+    background-image: url("../image/cartoon.jpg");
+    margin-left: 10px;
+    margin-top: 25px;
+}
+
+#table_km {
+    width: 200px;
+    position: relative;
+    right: 6px;
+}
+
+#table_km tr td input {
+    margin-left: 13px;
+}
+
+#article_2 {
+    margin-top: 490px;
+}
+
+#article_2 table tr td {
+    padding-left: 10px;
+    text-align: left;
+}
+
+#article_2 table tr td input {
+    margin-top: 5px;
+    margin-left: 33px;
+}
+
+footer {
+    height: 150px;
+    background-color: #0fa0dd;
+    color: moccasin;
+    font-size: 23px;
+    text-align: center;
+}
+
+footer span {
+    font-weight: bold;
+    position: relative;
+    top: 60px;
+    font-family: Verdana;
+    font-size: 18px;
+    text-shadow: 1px 1px black;
+}

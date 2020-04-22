@@ -1,0 +1,71 @@
+h2 {
+    color: moccasin;
+    margin-left: 250px;
+    font-family: Verdana;
+    font-size: 30px;
+    text-shadow: 2px 1px black;
+}
+
+#main_content {
+    width: 100%
+}
+
+.table {
+    width: 900px;
+    border-collapse: collapse;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.table tr th {
+    height: 30px;
+    width: 100px;
+    background-color: yellow;
+    border: 1px solid #4f6367;
+    font-size: 16px;
+    font-family: Verdana;
+    text-shadow: 1px 1px white;
+    color: red;
+}
+
+.table tr td {
+    background-color: #b8d8d8;
+    border: 1px solid #4f6367;
+    height: 27px;
+    color: #4f6367;
+    padding-left: 15px;
+}
+
+#promotion {
+    margin-left: 200px;
+}
+
+#dashboard {
+}
+
+#container {
+    background-color: #5aa08d;
+}
+
+#add {
+    margin-left: 440px;
+    position: relative;
+    top: 10px;
+    height: 30px;
+}
+
+#dashboard button a {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+}
+
+#edit {
+    margin-left: 40px;
+    margin-top: 18px;
+}
+
+#delete {
+    margin-top: 18px;
+    margin-left: 30px;
+}
