@@ -6,6 +6,15 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" import="com.codegym.readFile.*"%>
+<%@ page language="java" import="java.util.*"%>
+<%@ page language="java" import="java.io.*"%>
+<%
+  String filePath = "/root/Documents/Codegym_Projects/Case_Study_Module_2_Project/web/storage_file/CoursesData.csv";
+  CourseController course = new CourseController(new CSVStorage());
+  course.read(filePath);
+  List<InformationCourse> listCourse = course.getListCourse();
+%>
 <html>
   <head>
     <title>Khóa Học Online</title>
@@ -70,11 +79,12 @@
           </article>
           <article id="article_1">
             <div class="header_bar_main">Khóa Học Mới Nhất</div>
-            <table>
+            <%--<table>
               <tr>
                 <td>
                   <img src="image/html_5.jpg" alt="html_5" width="150" height="120"/>
-                  <span>Giá: 2.000.000 VND</span>
+                  <!--<span>Giá: 2.000.000 VND</span>-->
+                  <span><%=listCourse.get(0).getNameCourse()%></span>
                   <input type="submit" name="addToCart" value="Đăng Kí" class="btn"/>
                   <input type="button" value="Chi Tiết" class="btn"/>
                 </td>
@@ -111,6 +121,78 @@
                   <input type="button" value="Chi Tiết" class="btn"/>
                 </td>
               </tr>
+            </table>--%>
+            <table>
+                <tr>
+              <%
+                for (int i = 0; i < listCourse.size(); i++) {
+                  if (i != 3) {
+              %>
+                      <td>
+                        <img src="image/html_5.jpg" alt="html_5" width="150" height="120"/>
+                        <span><%=listCourse.get(i).getNameCourse()%></span>
+                        <span><%=listCourse.get(i).getPriceCourse()%></span>
+                        <input type="button" value="Chi Tiết" class="btn"/>
+                      </td>
+              <%
+                  } else {
+                    %>
+                </tr>
+              <tr>
+                <td>
+                  <img src="image/html_5.jpg" alt="html_5" width="150" height="120"/>
+                  <span><%=listCourse.get(i).getNameCourse()%></span>
+                  <span><%=listCourse.get(i).getPriceCourse()%></span>
+                  <input type="button" value="Chi Tiết" class="btn"/>
+                </td>
+              <%
+                  }
+                  %>
+              <%
+                }
+              %>
+                </tr>
+              <%--<tr>
+                <td>
+                  <img src="image/html_5.jpg" alt="html_5" width="150" height="120"/>
+                  <!--<span>Giá: 2.000.000 VND</span>-->
+                  <span><%=listCourse.get(0).getNameCourse()%></span>
+                  <input type="submit" name="addToCart" value="Đăng Kí" class="btn"/>
+                  <input type="button" value="Chi Tiết" class="btn"/>
+                </td>
+                <td>
+                  <img src="image/java.png" alt="java" width="150" height="120"/>
+                  <span>Giá: 5.000.000 VND</span>
+                  <input type="submit" name="addToCart" value="Đăng Kí" class="btn"/>
+                  <input type="button" value="Chi Tiết" class="btn"/>
+                </td>
+                <td>
+                  <img src="image/JavaScript.png" alt="javascript" width="150" height="120"/>
+                  <span>Giá: 2.700.000 VND</span>
+                  <input type="submit" name="addToCart" value="Đăng Kí" class="btn"/>
+                  <input type="button" value="Chi Tiết" class="btn"/>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="image/Window.jpg" alt="Window_10" width="150" height="120"/>
+                  <span>Giá: 4.850.000 VND</span>
+                  <input type="submit" name="addToCart" value="Đăng Kí" class="btn"/>
+                  <input type="button" value="Chi Tiết" class="btn"/>
+                </td>
+                <td>
+                  <img src="image/kali.jpg" alt="kali" width="150" height="120"/>
+                  <span>Giá: 7.500.000 VND</span>
+                  <input type="submit" name="addToCart" value="Đăng Kí" class="btn"/>
+                  <input type="button" value="Chi Tiết" class="btn"/>
+                </td>
+                <td>
+                  <img src="image/linux.png" alt="linux" width="150" height="120"/>
+                  <span>Giá: 2.000.000 VND</span>
+                  <input type="submit" name="addToCart" value="Đăng Kí" class="btn"/>
+                  <input type="button" value="Chi Tiết" class="btn"/>
+                </td>
+              </tr>--%>
             </table>
           </article>
           <article id="article_2">
